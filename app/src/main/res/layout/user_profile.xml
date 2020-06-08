@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="550dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/oval_border_shape"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="30dp"
+            app:civ_border_color="@color/white"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/user_name"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/booksCountMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/ic_book_light_gray_24dp"
+            android:drawablePadding="5dp"
+            android:text="@string/user_books_count_message"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/booksCount"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/user_books_count"
+            android:textSize="35dp"
+            android:layout_toRightOf="@+id/booksCountMessage" />
+    </LinearLayout>
+</RelativeLayout>

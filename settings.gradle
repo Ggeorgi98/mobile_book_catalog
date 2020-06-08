@@ -1,0 +1,2 @@
+rootProject.name='BooksCatalog'
+include ':app'

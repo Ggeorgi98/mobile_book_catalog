@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/books_category"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/books_cat_img"/>
+
+    <TextView
+        android:layout_below="@+id/books_cat_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/book_categories"
+        android:id="@+id/book_cat"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fantasy_category"
+        android:layout_below="@+id/book_cat"
+        android:layout_centerInParent="true"
+        android:layout_margin="60dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="24dp"
+        android:id="@+id/fantasy_category"
+        android:background="@drawable/oval_border_shape"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/historic_category"
+        android:layout_below="@+id/fantasy_category"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="50dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="24dp"
+        android:id="@+id/historic_category"
+        android:background="@drawable/oval_border_shape"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thriller_category"
+        android:layout_below="@+id/historic_category"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="24dp"
+        android:id="@+id/thriller_category"
+        android:background="@drawable/oval_border_shape"/>
+
+</RelativeLayout>
