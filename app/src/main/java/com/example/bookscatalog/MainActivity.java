@@ -56,8 +56,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 new BookCategoriesModel()).commit();
         }
 
-        //бутонът с картинка може да се реализира по 3 начина:
-        //1.
         userProfileBtn = findViewById(R.id.my_profile);
         userProfileBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,26 +64,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new UserProfileModel()).commit();
             }
         });
-
-        //2.
-        /*circleImgButton = findViewById(R.id.my_profile);
-        circleImgButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new UserProfileModel()).commit();
-            }
-        });*/
-
-        //3.
-        /*imageButton = findViewById(R.id.my_profile);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new UserProfileModel()).commit();
-            }
-        });*/
 
         appTitle = findViewById(R.id.appTitle);
         appTitle.setOnClickListener(new View.OnClickListener() {
